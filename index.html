@@ -269,6 +269,14 @@
     }
     .hero-eyebrow i { color: var(--brand-accent); font-size: 14px; }
 
+    /* iPhone SE / <380px: shorten pill text + tighter tracking so it fits one line */
+    .hero-eyebrow-short { display: none; }
+    @media (max-width: 379px) {
+      .hero-eyebrow-full { display: none; }
+      .hero-eyebrow-short { display: inline-flex; }
+      .hero-eyebrow { padding: 7px 14px; font-size: 0.66rem; letter-spacing: 0.14em; }
+    }
+
     .hero h1 {
       font-family: var(--font-display);
       font-size: clamp(2.6rem, 6.5vw, 5.4rem);
@@ -1049,6 +1057,11 @@
     .call-fab:hover { transform: scale(1.08); }
     .call-fab i { line-height: 1; }
     @media (min-width: 769px) { .call-fab { display: none; } }
+    /* iPhone SE / <380px: FAB collides with hero CTA — hide it.
+       The hero "Call" button + sticky nav phone link cover this case. */
+    @media (max-width: 379px) {
+      .call-fab { display: none; }
+    }
 
     /* ================================ */
     /* RESPONSIVE                       */
@@ -1180,9 +1193,13 @@
     <div class="hero-glow" aria-hidden="true"></div>
 
     <div class="hero-content">
-      <div class="hero-eyebrow">
+      <div class="hero-eyebrow hero-eyebrow-full">
         <i class="ph-bold ph-map-pin"></i>
         Shell Lake &amp; Spooner, Wisconsin
+      </div>
+      <div class="hero-eyebrow hero-eyebrow-short">
+        <i class="ph-bold ph-map-pin"></i>
+        Shell Lake, WI
       </div>
 
       <h1 id="hero-heading">Bashaw Valley <span class="accent">Farm</span></h1>
