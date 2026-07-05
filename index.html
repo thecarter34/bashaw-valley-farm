@@ -178,15 +178,6 @@
     .navbar.scrolled { background: rgba(31,26,20,0.96); padding: 10px 28px; }
 
     .nav-logo { display: flex; align-items: center; gap: 12px; cursor: pointer; min-width: 0; color: var(--text-on-dark); }
-    .nav-logo-mark {
-      width: 38px; height: 38px;
-      display: flex; align-items: center; justify-content: center;
-      border-radius: 8px;
-      background-color: var(--brand-cream);
-      overflow: hidden;
-      flex-shrink: 0;
-    }
-    .nav-logo-mark img { width: 100%; height: 100%; display: block; }
     .nav-logo-text { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; letter-spacing: 0.02em; white-space: nowrap; }
     .nav-logo-text .accent { color: var(--brand-accent); }
     /* On mobile, keep the wordmark visible (no longer hidden) — it's the only
@@ -197,7 +188,6 @@
     }
     @media (max-width: 380px) {
       .nav-logo-text { font-size: 0.85rem; }
-      .nav-logo-mark { width: 34px; height: 34px; }
     }
 
     .nav-links { display: flex; gap: clamp(1.4rem, 3vw, 2.4rem); }
@@ -1191,7 +1181,6 @@
   <!-- ============================================================ -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <a href="#home" class="nav-logo" aria-label="Bashaw Valley Farm home">
-      <span class="nav-logo-mark" aria-hidden="true"><img src="favicon.png" alt="" width="38" height="38"></span>
       <span class="nav-logo-text">Bashaw Valley <span class="accent">Farm</span></span>
     </a>
     <ul class="nav-links">
@@ -1411,7 +1400,7 @@
       </article>
 
       <article class="service-card reveal reveal-delay-2" role="listitem">
-        <div class="service-card-icon"><i class="ph-bold ph-berries"></i></div>
+        <div class="service-card-icon"><i class="ph-bold ph-leaf"></i></div>
         <h3>Organic Blueberries</h3>
         <p>USDA certified organic. Mid-July brings U-pick and pre-picked berries by the pint and pail; the rest of the year we keep them in the freezer.</p>
         <div class="service-card-meta">
@@ -1433,7 +1422,7 @@
       </article>
 
       <article class="service-card reveal reveal-delay-2" role="listitem">
-        <div class="service-card-icon"><i class="ph-bold ph-garage"></i></div>
+        <div class="service-card-icon"><i class="ph-bold ph-warehouse"></i></div>
         <h3>Self-Storage</h3>
         <p>150+ units with concrete floors and roll-up doors — household, business, and vehicle storage. Secure inside storage for RVs, boats, and snowmobiles.</p>
         <div class="service-card-meta">
@@ -1487,14 +1476,14 @@
             </div>
           </div>
           <div class="about-pillar">
-            <div class="about-pillar-icon"><i class="ph-bold ph-flower-lotus"></i></div>
+            <div class="about-pillar-icon"><i class="ph-bold ph-tree-evergreen"></i></div>
             <div>
               <h3>Wisconsin woods, Wisconsin hands</h3>
               <p>Wreaths are cut and tied from the freshest balsam and white pine boughs grown here in northern Wisconsin.</p>
             </div>
           </div>
           <div class="about-pillar">
-            <div class="about-pillar-icon"><i class="ph-bold ph-users-three"></i></div>
+            <div class="about-pillar-icon"><i class="ph-bold ph-phone-call"></i></div>
             <div>
               <h3>Two lines, two businesses</h3>
               <p>The farm line and Lynnda's wreath line both ring to the same property. Either one is a real person who picks up.</p>
@@ -1788,7 +1777,7 @@
         <p>Secure inside winter storage for snowmobiles, ATVs, side-by-sides, and summer toys. Pull in, lock up, and come back when the season does.</p>
       </article>
       <article class="storage-card reveal reveal-delay-3">
-        <div class="storage-card-icon"><i class="ph-bold ph-key"></i></div>
+        <div class="storage-card-icon"><i class="ph-bold ph-car"></i></div>
         <h3>Drive-Up Access</h3>
         <p>Drive-up access with concrete floors and roll-up doors on every unit. Load and unload at your vehicle, not across a parking lot.</p>
       </article>
